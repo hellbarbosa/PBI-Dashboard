@@ -10,21 +10,21 @@
       "nodes": [
         {
           "location": {
-            "x": 0,
-            "y": 111
+            "x": 959.94267578529411,
+            "y": 0
           },
           "nodeIndex": "[ Measures ]",
           "nodeLineageTag": "64779199-0040-49b2-8302-674413c2ae79",
           "size": {
-            "height": 152,
+            "height": 810.15857976056418,
             "width": 234
           },
           "zIndex": 1
         },
         {
           "location": {
-            "x": 508,
-            "y": 198
+            "x": 0,
+            "y": 244.46467634357742
           },
           "nodeIndex": "FACTSales",
           "nodeLineageTag": "a3bd557b-b5bc-4ec8-b5c8-196fffcfbaf7",
@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 810,
-            "y": 37.5
+            "x": 633,
+            "y": 0
           },
           "nodeIndex": "DIMCalendar",
           "nodeLineageTag": "fc8b9d2a-8c10-4e21-8167-970793369dce",
@@ -46,10 +46,34 @@
             "width": 234
           },
           "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 358,
+            "y": 0
+          },
+          "nodeIndex": "DIMCountry",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1243.9426757852939,
+            "y": 305.07928988028209
+          },
+          "nodeIndex": "DIMProducts",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
-      "zoomValue": 100,
+      "zoomValue": 70.95554390096882,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

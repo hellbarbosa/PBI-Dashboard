@@ -2,8 +2,6373 @@ cultureInfo en-US
 
 	linguisticMetadata =
 			{
-			  "Version": "1.0.0",
-			  "Language": "en-US"
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "FACT_sale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "FACT sale": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FACTSales": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "fact auction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fact transaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "fact deal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "fact trade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "fact vending": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "fact retailing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "fact selling": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.segment": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Segment"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "segment": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "division": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "subdivision": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "sector": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "bit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "fragment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "piece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "slice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.country": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Country"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "country": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.product": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Product"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "artifact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.discount_band": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Discount Band"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "discount band": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "band": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "discount posse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "posse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "discount group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "discount gang": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "discount crew": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "discount crowd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "discount mob": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "gang": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "crew": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "crowd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.unit_sold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Units Sold"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unit sold": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "module sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "element sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "entity sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "group sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "component sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "constituent sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "item sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "part sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "section sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.manufacturing_price": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Manufacturing Price"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "manufacturing price": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "price": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "manufacturing value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "manufacturing worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "manufacturing fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "manufacturing charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "manufacturing amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "manufacturing bill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "manufacturing rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "manufacturing expense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "manufacturing cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "manufacturing outlay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.sale_price": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Sale Price"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sale price": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "price": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sale value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sale worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sale fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sale charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sale amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sale bill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sale rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sale expense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sale cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sale outlay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.gross_sale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Gross Sales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gross sale": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.647
+			          }
+			        },
+			        {
+			          "overall sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.647
+			          }
+			        },
+			        {
+			          "whole sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.647
+			          }
+			        },
+			        {
+			          "sum sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "gross auction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "gross transaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "gross deal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "gross trade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "gross vending": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.discount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Discounts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "discount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "reduction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "markdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "concession": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "deduction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rebate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.sale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Sales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sale": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "auction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "transaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "deal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "trade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "vending": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "retailing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "selling": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.cog": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "COGS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cog": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mechanism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "cogwheel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gearwheel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "flywheel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "component": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "gear": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "wheel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.profit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Profit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "return": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "advantage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "gain": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "benefit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "use": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "reward": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "good": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "FACT_sale.month_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Month Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.month_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Month Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "FACT_sale.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FACTSales",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "measures_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "[ measures ]": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "[ measure ]": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.todays_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Todays date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "todays date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "today moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "today period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "measures_.last_update_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Last update label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "last update label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "update label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "last update sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "update sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "last update tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "last update decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "update tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "update decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "last update name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.604
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.total_sales_revenue": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Total Sales Revenue"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total sales revenue": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sales revenue": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total sale income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "sale income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "total sale profit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "total sale turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "total sale yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sale profit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sale turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sale yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "aggregate sale revenue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall sale revenue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.total_sales_revenue_CM": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Total Sales Revenue CM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total sales revenue CM": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CM": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "revenue CM": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sales revenue CM": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total sale income cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "sale income cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "income cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "aggregate sale revenue cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall sale revenue cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "total sale revenue cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "total sale profit cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "total sale turnover cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "total sale yield cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "sale revenue cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Revenue": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.total_sales_revenue_PM": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Total Sales Revenue PM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total sales revenue PM": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PM": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "revenue PM": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sales revenue PM": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total sale income pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "sale income pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "income pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "total sale profit pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "total sale turnover pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "total sale yield pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "sale profit pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sale turnover pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sale yield pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "turnover pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.total_sales_revenue_MTD_delta_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Total Sales Revenue MTD Delta Pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total sales revenue MTD delta pct": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.total_sales_revenue_MTD_delta_pct_arrow": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Total Sales Revenue MTD Delta Pct Arrow"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total sales revenue MTD delta pct arrow": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.card_placeholder": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Card Placeholder"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "card placeholder": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "placeholder": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.last_month_comparison_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Last Month Comparison Label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "last month comparison label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "comparison label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "month comparison label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "last month comparison sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "month comparison sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "comparison sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "last month comparison tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "last month comparison decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "month comparison tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "month comparison decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "comparison tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "comparison decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.profit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Profit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "return": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "advantage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "gain": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "benefit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "use": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "reward": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "good": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.profit_CM": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Profit CM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profit CM": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CM": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.profit_MTD_delta_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Profit MTD Delta Pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profit MTD delta pct": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.profit_MTD_delta_pct_arrow": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Profit MTD Delta Pct Arrow"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profit MTD delta pct arrow": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "profit mtd delta pct missile": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "profit mtd delta pct projectile": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "profit mtd delta pct dart": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "profit mtd delta pct barb": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "profit mtd delta pct shaft": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "profit mtd delta pct bolt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "profit mtd delta pct cursor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "profit mtd delta pct marker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "profit mtd delta pct pointer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "profit mtd delta pct rocket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.profit_PM": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Profit PM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profit PM": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PM": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "income pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "turnover pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "return pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "yield pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "advantage pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "gain pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "benefit pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "use pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "reward pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "good pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.unit_sold": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Units Sold"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unit sold": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "module sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "element sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "entity sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "group sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "component sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "constituent sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "item sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "part sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "section sold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.units_sold_CM": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Units Sold CM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "units sold CM": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "unit sold cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.677
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.units_sold_MTD_delta_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Units Sold MTD Delta Pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "units sold MTD delta pct": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "unit sold mtd delta pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.693
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.units_sold_MTD_delta_pct_arrow": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Units Sold MTD Delta Pct Arrow"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "units sold MTD delta pct arrow": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.units_sold_PM": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Units Sold PM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "units sold PM": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "unit sold pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.total_COGS": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Total COGS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total COGS": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COGS": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate cog": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall cog": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total mechanism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total device": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total workings": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mechanism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "device": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "workings": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "total works": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "works": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.total_COGS_CM": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Total COGS CM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total COGS CM": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CM": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "COGS CM": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate cog cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall cog cm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.total_COGS_MTD_delta_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Total COGS MTD Delta Pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total COGS MTD delta pct": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate cog mtd delta pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall cog mtd delta pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.total_COGS_MTD_delta_pct_arrow": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Total COGS MTD Delta Pct Arrow"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total COGS MTD delta pct arrow": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.total_COGS_PM": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Total COGS PM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total COGS PM": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PM": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "COGS PM": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate cog pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall cog pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "total mechanism pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "total device pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "total workings pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "mechanism pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "device pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "workings pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total works pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "works pm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.total_sales_revenue_max_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Total Sales Revenue Max Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total sales revenue max value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "max value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "revenue max value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sales revenue max value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total sale income max value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "sale income max value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "income max value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "aggregate sale revenue max value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall sale revenue max value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total sale revenue max value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total sale profit max value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total sale turnover max value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total sale yield max value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total sale revenue maximum value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.trend_chart_label_min": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Trend Chart Label Min"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trend chart label min": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label min": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "chart label min": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "trend chart label minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "chart label minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "label minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "trend chart sticker min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "chart sticker min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "sticker min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "trend chart tag min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "trend chart decal min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "chart tag min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "chart decal min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "measures_.trend_chart_label_max": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "[ Measures ]",
+			          "ConceptualProperty": "Trend Chart Label Max"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trend chart label max": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label max": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "chart label max": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "trend chart label maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "chart label maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "label maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "trend chart sticker max": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "chart sticker max": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "sticker max": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "trend chart tag max": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "trend chart decal max": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "chart tag max": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "chart decal max": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_calendar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCalendar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DIM calendar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DIMCalendar": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "calendar": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dim almanac": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim datebook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim agenda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim logbook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim diary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "almanac": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "datebook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "agenda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "logbook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "diary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_calendar.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCalendar",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "DIM_calendar.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCalendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "DIM_calendar.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCalendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "DIM_calendar.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCalendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "DIM_calendar.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCalendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "DIM_calendar.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCalendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "DIM_calendar.date_MMDDYYYY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCalendar",
+			          "ConceptualProperty": "Date MMDDYYYY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date MMDDYYYY": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment mmddyyyy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period mmddyyyy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_calendar.year_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCalendar",
+			          "ConceptualProperty": "YearNumber"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "YearNumber": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "year no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "yr number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "DIM_calendar.month_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCalendar",
+			          "ConceptualProperty": "MonthNumber"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MonthNumber": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "month no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_calendar.date_MMMYYYY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCalendar",
+			          "ConceptualProperty": "Date MMMYYYY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date MMMYYYY": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment mmmyyyy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period mmmyyyy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_country": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCountry"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DIM country": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DIMCountry": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_country.country": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMCountry",
+			          "ConceptualProperty": "Country"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "country": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "DIM_product": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMProducts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DIM product": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DIMProducts": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim artifact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_product.product": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIMProducts",
+			          "ConceptualProperty": "Product"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "artifact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "merchandise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "produce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "DIM_calendar_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar.date": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date"
+			          }
+			        },
+			        "DIM_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar.date"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendar.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_DIM_country": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "DIM_country": {
+			          "Target": {
+			            "Entity": "DIM_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "DIM_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_DIM_countries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_country"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_countries_have_FACT_sales"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_DIM_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "DIM_calendar": {
+			          "Target": {
+			            "Entity": "DIM_calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_DIM_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendars_have_FACT_sales"
+			        }
+			      ]
+			    },
+			    "DIM_product_has_product": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMProducts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_product": {
+			          "Target": {
+			            "Entity": "DIM_product"
+			          }
+			        },
+			        "DIM_product.product": {
+			          "Target": {
+			            "Entity": "DIM_product.product"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_product"
+			            },
+			            "Object": {
+			              "Role": "DIM_product.product"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_products_have_products"
+			        }
+			      ]
+			    },
+			    "DIM_country_has_country": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCountry"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_country": {
+			          "Target": {
+			            "Entity": "DIM_country"
+			          }
+			        },
+			        "DIM_country.country": {
+			          "Target": {
+			            "Entity": "DIM_country.country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_country"
+			            },
+			            "Object": {
+			              "Role": "DIM_country.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_countries_have_countries"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "DIM_country"
+			            },
+			            "Name": {
+			              "Role": "DIM_country.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "countries_are_names_IDs_of_DIM_countries"
+			        }
+			      ]
+			    },
+			    "DIM_calendar_has_date_MMMYYYY": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar": {
+			          "Target": {
+			            "Entity": "DIM_calendar"
+			          }
+			        },
+			        "DIM_calendar.date_MMMYYYY": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date_MMMYYYY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendar.date_MMMYYYY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendars_have_date_MMMYYYies"
+			        }
+			      ]
+			    },
+			    "DIM_calendar_has_month_number": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar": {
+			          "Target": {
+			            "Entity": "DIM_calendar"
+			          }
+			        },
+			        "DIM_calendar.month_number": {
+			          "Target": {
+			            "Entity": "DIM_calendar.month_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendar.month_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendars_have_month_numbers"
+			        }
+			      ]
+			    },
+			    "DIM_calendar_has_year_number": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar": {
+			          "Target": {
+			            "Entity": "DIM_calendar"
+			          }
+			        },
+			        "DIM_calendar.year_number": {
+			          "Target": {
+			            "Entity": "DIM_calendar.year_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendar.year_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendars_have_year_numbers"
+			        }
+			      ]
+			    },
+			    "DIM_calendar_has_date_MMDDYYYY": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar": {
+			          "Target": {
+			            "Entity": "DIM_calendar"
+			          }
+			        },
+			        "DIM_calendar.date_MMDDYYYY": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date_MMDDYYYY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendar.date_MMDDYYYY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendars_have_date_MMDDYYYies"
+			        }
+			      ]
+			    },
+			    "DIM_calendar_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar": {
+			          "Target": {
+			            "Entity": "DIM_calendar"
+			          }
+			        },
+			        "DIM_calendar.date": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendar.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendars_have_dates"
+			        }
+			      ]
+			    },
+			    "DIM_calendar_has_measures__trend_chart_label_max": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar": {
+			          "Target": {
+			            "Entity": "DIM_calendar"
+			          }
+			        },
+			        "measures_.trend_chart_label_max": {
+			          "Target": {
+			            "Entity": "measures_.trend_chart_label_max"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar"
+			            },
+			            "Object": {
+			              "Role": "measures_.trend_chart_label_max"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendars_have_trend_chart_label_max"
+			        }
+			      ]
+			    },
+			    "DIM_calendar_has_measures__trend_chart_label_min": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar": {
+			          "Target": {
+			            "Entity": "DIM_calendar"
+			          }
+			        },
+			        "measures_.trend_chart_label_min": {
+			          "Target": {
+			            "Entity": "measures_.trend_chart_label_min"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar"
+			            },
+			            "Object": {
+			              "Role": "measures_.trend_chart_label_min"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendars_have_trend_chart_label_min"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__total_sales_revenue_max_value": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.total_sales_revenue_max_value": {
+			          "Target": {
+			            "Entity": "measures_.total_sales_revenue_max_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.total_sales_revenue_max_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_total_sales_revenue_max_value"
+			        }
+			      ]
+			    },
+			    "DIM_calendar_has_measures__total_sales_revenue_max_value": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar": {
+			          "Target": {
+			            "Entity": "DIM_calendar"
+			          }
+			        },
+			        "measures_.total_sales_revenue_max_value": {
+			          "Target": {
+			            "Entity": "measures_.total_sales_revenue_max_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar"
+			            },
+			            "Object": {
+			              "Role": "measures_.total_sales_revenue_max_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_calendars_have_total_sales_revenue_max_value"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__total_COGS_PM": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.total_COGS_PM": {
+			          "Target": {
+			            "Entity": "measures_.total_COGS_PM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.total_COGS_PM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_total_COGS_PM"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__total_COGS_MTD_delta_pct_arrow": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.total_COGS_MTD_delta_pct_arrow": {
+			          "Target": {
+			            "Entity": "measures_.total_COGS_MTD_delta_pct_arrow"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.total_COGS_MTD_delta_pct_arrow"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_total_COGS_MTD_delta_pct_arrow"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__total_COGS_MTD_delta_pct": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.total_COGS_MTD_delta_pct": {
+			          "Target": {
+			            "Entity": "measures_.total_COGS_MTD_delta_pct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.total_COGS_MTD_delta_pct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_total_COGS_MTD_delta_pct"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__total_COGS_CM": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.total_COGS_CM": {
+			          "Target": {
+			            "Entity": "measures_.total_COGS_CM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.total_COGS_CM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_total_COGS_CM"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__total_COGS": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.total_COGS": {
+			          "Target": {
+			            "Entity": "measures_.total_COGS"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.total_COGS"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_total_COGS"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__units_sold_PM": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.units_sold_PM": {
+			          "Target": {
+			            "Entity": "measures_.units_sold_PM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.units_sold_PM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_units_sold_PM"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__units_sold_MTD_delta_pct_arrow": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.units_sold_MTD_delta_pct_arrow": {
+			          "Target": {
+			            "Entity": "measures_.units_sold_MTD_delta_pct_arrow"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.units_sold_MTD_delta_pct_arrow"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_units_sold_MTD_delta_pct_arrow"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__units_sold_MTD_delta_pct": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.units_sold_MTD_delta_pct": {
+			          "Target": {
+			            "Entity": "measures_.units_sold_MTD_delta_pct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.units_sold_MTD_delta_pct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_units_sold_MTD_delta_pct"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__units_sold_CM": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.units_sold_CM": {
+			          "Target": {
+			            "Entity": "measures_.units_sold_CM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.units_sold_CM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_units_sold_CM"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__unit_sold": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.unit_sold": {
+			          "Target": {
+			            "Entity": "measures_.unit_sold"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.unit_sold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_unit_sold"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__profit_PM": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.profit_PM": {
+			          "Target": {
+			            "Entity": "measures_.profit_PM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.profit_PM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_profit_PM"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__profit_MTD_delta_pct_arrow": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.profit_MTD_delta_pct_arrow": {
+			          "Target": {
+			            "Entity": "measures_.profit_MTD_delta_pct_arrow"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.profit_MTD_delta_pct_arrow"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_profit_MTD_delta_pct_arrow"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__profit_MTD_delta_pct": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.profit_MTD_delta_pct": {
+			          "Target": {
+			            "Entity": "measures_.profit_MTD_delta_pct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.profit_MTD_delta_pct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_profit_MTD_delta_pct"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__profit_CM": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.profit_CM": {
+			          "Target": {
+			            "Entity": "measures_.profit_CM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.profit_CM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_profit_CM"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__profit": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.profit": {
+			          "Target": {
+			            "Entity": "measures_.profit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.profit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_profit"
+			        }
+			      ]
+			    },
+			    "measures__has_last_month_comparison_label": {
+			      "Binding": {
+			        "ConceptualEntity": "[ Measures ]"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measures_": {
+			          "Target": {
+			            "Entity": "measures_"
+			          }
+			        },
+			        "measures_.last_month_comparison_label": {
+			          "Target": {
+			            "Entity": "measures_.last_month_comparison_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measures_"
+			            },
+			            "Object": {
+			              "Role": "measures_.last_month_comparison_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures__have_last_month_comparison_label"
+			        }
+			      ]
+			    },
+			    "measures__has_card_placeholder": {
+			      "Binding": {
+			        "ConceptualEntity": "[ Measures ]"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measures_": {
+			          "Target": {
+			            "Entity": "measures_"
+			          }
+			        },
+			        "measures_.card_placeholder": {
+			          "Target": {
+			            "Entity": "measures_.card_placeholder"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measures_"
+			            },
+			            "Object": {
+			              "Role": "measures_.card_placeholder"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures__have_card_placeholder"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__total_sales_revenue_MTD_delta_pct_arrow": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.total_sales_revenue_MTD_delta_pct_arrow": {
+			          "Target": {
+			            "Entity": "measures_.total_sales_revenue_MTD_delta_pct_arrow"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.total_sales_revenue_MTD_delta_pct_arrow"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_total_sales_revenue_MTD_delta_pct_arrow"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__total_sales_revenue_MTD_delta_pct": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.total_sales_revenue_MTD_delta_pct": {
+			          "Target": {
+			            "Entity": "measures_.total_sales_revenue_MTD_delta_pct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.total_sales_revenue_MTD_delta_pct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_total_sales_revenue_MTD_delta_pct"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__total_sales_revenue_PM": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.total_sales_revenue_PM": {
+			          "Target": {
+			            "Entity": "measures_.total_sales_revenue_PM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.total_sales_revenue_PM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_total_sales_revenue_PM"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__total_sales_revenue_CM": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.total_sales_revenue_CM": {
+			          "Target": {
+			            "Entity": "measures_.total_sales_revenue_CM"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.total_sales_revenue_CM"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_total_sales_revenue_CM"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_measures__total_sales_revenue": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "measures_.total_sales_revenue": {
+			          "Target": {
+			            "Entity": "measures_.total_sales_revenue"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_.total_sales_revenue"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_total_sales_revenue"
+			        }
+			      ]
+			    },
+			    "measures__has_last_update_label": {
+			      "Binding": {
+			        "ConceptualEntity": "[ Measures ]"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measures_": {
+			          "Target": {
+			            "Entity": "measures_"
+			          }
+			        },
+			        "measures_.last_update_label": {
+			          "Target": {
+			            "Entity": "measures_.last_update_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measures_"
+			            },
+			            "Object": {
+			              "Role": "measures_.last_update_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures__have_last_update_label"
+			        }
+			      ]
+			    },
+			    "measures__has_todays_date": {
+			      "Binding": {
+			        "ConceptualEntity": "[ Measures ]"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measures_": {
+			          "Target": {
+			            "Entity": "measures_"
+			          }
+			        },
+			        "measures_.todays_date": {
+			          "Target": {
+			            "Entity": "measures_.todays_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measures_"
+			            },
+			            "Object": {
+			              "Role": "measures_.todays_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures__have_todays_date"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.year": {
+			          "Target": {
+			            "Entity": "FACT_sale.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_years"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_month_name": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.month_name": {
+			          "Target": {
+			            "Entity": "FACT_sale.month_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.month_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_month_names"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_month_number": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.month_number": {
+			          "Target": {
+			            "Entity": "FACT_sale.month_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.month_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_month_numbers"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.date": {
+			          "Target": {
+			            "Entity": "FACT_sale.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_dates"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_profit": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.profit": {
+			          "Target": {
+			            "Entity": "FACT_sale.profit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.profit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_profits"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_cog": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.cog": {
+			          "Target": {
+			            "Entity": "FACT_sale.cog"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.cog"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_cogs"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_sale": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.sale": {
+			          "Target": {
+			            "Entity": "FACT_sale.sale"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.sale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_sales"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_discount": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.discount": {
+			          "Target": {
+			            "Entity": "FACT_sale.discount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.discount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_discounts"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_gross_sale": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.gross_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale.gross_sale"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.gross_sale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_gross_sales"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_sale_price": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.sale_price": {
+			          "Target": {
+			            "Entity": "FACT_sale.sale_price"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.sale_price"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_sale_prices"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "FACT_sale.sale_price"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sale_price_indicates_how_expensive_FACT_sales_are"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_manufacturing_price": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.manufacturing_price": {
+			          "Target": {
+			            "Entity": "FACT_sale.manufacturing_price"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.manufacturing_price"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_manufacturing_prices"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "FACT_sale.manufacturing_price"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "manufacturing_price_indicates_how_expensive_FACT_sales_are"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_unit_sold": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.unit_sold": {
+			          "Target": {
+			            "Entity": "FACT_sale.unit_sold"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.unit_sold"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_unit_sold1"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_discount_band": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.discount_band": {
+			          "Target": {
+			            "Entity": "FACT_sale.discount_band"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.discount_band"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_discount_bands"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_product": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.product": {
+			          "Target": {
+			            "Entity": "FACT_sale.product"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.product"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_products"
+			        }
+			      ]
+			    },
+			    "FACT_sale_has_segment": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "FACT_sale.segment": {
+			          "Target": {
+			            "Entity": "FACT_sale.segment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale.segment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_segments"
+			        }
+			      ]
+			    },
+			    "FACT_sale_in_DIM_country": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "DIM_country": {
+			          "Target": {
+			            "Entity": "DIM_country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "DIM_country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "DIM_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_are_in_DIM_countries"
+			        }
+			      ]
+			    },
+			    "DIM_calendar_date_date_hierarchy_has_DIM_calendar_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "DIM_calendar.date.year": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendar.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "DIM_calendar_date_date_hierarchy_has_DIM_calendar_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "DIM_calendar.date.quarter": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendar.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "DIM_calendar_date_date_hierarchy_has_DIM_calendar_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "DIM_calendar.date.month": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendar.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "DIM_calendar_date_date_hierarchy_has_DIM_calendar_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "DIM_calendar.date.day": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendar.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
 			}
 		contentType: json
 

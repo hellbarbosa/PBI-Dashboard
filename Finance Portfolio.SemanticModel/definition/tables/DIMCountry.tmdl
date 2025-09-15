@@ -1,0 +1,17 @@
+table DIMCountry
+	lineageTag: 1ba67b54-4f3b-4b1e-b0db-171c80d65767
+
+	column Country
+		lineageTag: f8af35af-d11a-4787-a883-93a211b2ba43
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: FACTSales[Country]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIMCountry = calculated
+		mode: import
+		source = DISTINCT ( FACTSales[Country] )
+
+	annotation PBI_Id = 11832e8f7b4c4ea5ae6d7d33ea51a1fe
+

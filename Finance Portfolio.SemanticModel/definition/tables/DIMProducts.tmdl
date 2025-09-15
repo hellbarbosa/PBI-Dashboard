@@ -1,0 +1,17 @@
+table DIMProducts
+	lineageTag: 1f303564-a727-444d-b963-dee810e2dceb
+
+	column Product
+		lineageTag: 97b1d80e-9825-4194-ade1-d8d2af7557c7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: FACTSales[Product]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIMProducts = calculated
+		mode: import
+		source = DISTINCT ( FACTSales[Product] )
+
+	annotation PBI_Id = 39cb36889842499bbdbcac476f275d3d
+

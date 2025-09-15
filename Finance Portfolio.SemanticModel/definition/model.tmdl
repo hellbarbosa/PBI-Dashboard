@@ -21,6 +21,8 @@ ref table '[ Measures ]'
 ref table DIMCalendar
 ref table DateTableTemplate_fdbdd09f-0356-4795-8b4a-b2e2d9a9b696
 ref table LocalDateTable_f982cd2f-bdb3-47e7-892a-f7de54a71f8e
+ref table DIMCountry
+ref table DIMProducts
 
 ref cultureInfo en-US
 
