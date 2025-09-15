@@ -1,0 +1,461 @@
+table '[ Measures ]'
+	lineageTag: 64779199-0040-49b2-8302-674413c2ae79
+
+	measure 'Todays date' = TODAY()
+		formatString: General Date
+		displayFolder: Visual
+		lineageTag: dfdcdc76-c468-4a5f-a8f5-ec9c334e093c
+
+	measure 'Last update label' = "last updated: "
+		displayFolder: Visual
+		lineageTag: dc676b80-6721-40ac-9068-7c816335a1f5
+
+	measure 'Total Sales Revenue' =
+			
+			CALCULATE(
+			    SUMX( FACTSales, [Units Sold] * [Sale Price] )
+			)
+		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
+		displayFolder: Total Sales\1. Base Measure
+		lineageTag: d6e2364f-68a4-4506-8c9f-e268a473ec4e
+
+	measure 'Total Sales Revenue CM' = ```
+			
+			-- This measures calculates total sales of the most recent month
+			
+			-- Finds most recent month with data, prevents return future dates with no values
+			VAR _MaxDate = MAX( FACTSales[Date] )
+			
+			VAR _Result = 
+			CALCULATE(
+			    [Total Sales Revenue],
+			    DIMCalendar[YearNumber] = YEAR( _MaxDate ),
+			    DIMCalendar[MonthNumber] = MONTH( _MaxDate )
+			)
+			
+			RETURN
+			_Result
+			```
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		displayFolder: Total Sales\2. Delta
+		lineageTag: 6d6e4888-0d99-466c-8a51-c51a3a4996de
+
+	measure 'Total Sales Revenue PM' = ```
+			
+			-- This measures calculates total sales of the most recent month prior month
+			
+			-- Finds most recent month with data, prevents return future dates with no values
+			VAR _MaxDate = MAX( FACTSales[Date] )
+			
+			VAR _Result = 
+			CALCULATE(
+			    [Total Sales Revenue],
+			    DIMCalendar[YearNumber] = YEAR( _MaxDate ),
+			    DIMCalendar[MonthNumber] = MONTH( _MaxDate ) -1
+			)
+			
+			RETURN
+			_Result
+			```
+		displayFolder: Total Sales\2. Delta
+		lineageTag: b68c76ed-1399-4fb0-81cb-4958aeab84f6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Sales Revenue MTD Delta Pct' = ```
+			
+			-- Calculates delta of current month and prior month, then returns percentage
+			
+			-- Delta percentage calculation
+			VAR _CM = [Total Sales Revenue CM]
+			VAR _PM = [Total Sales Revenue PM]
+			VAR _Delta = _CM - _PM
+			VAR _DeltaPct = FORMAT( DIVIDE( _Delta, _PM ), "+0.0%;-0.0%" )
+			
+			RETURN
+			_DeltaPct
+			
+			
+			```
+		displayFolder: Total Sales\2. Delta
+		lineageTag: 17bf39b0-4eaa-4d28-aaf6-014d52f3e934
+
+	measure 'Total Sales Revenue MTD Delta Pct Arrow' = ```
+			
+			-- Returns Unichar arrow based on CM delta percentage
+			-- Source: https://www.nudgebi.com/unicode-library
+			
+			-- Delta percentage calculation
+			VAR _CM = [Total Sales Revenue CM]
+			VAR _PM = [Total Sales Revenue PM]
+			VAR _Delta = _CM - _PM
+			
+			-- Unichar arrows setup
+			VAR _ArrowUp = UNICHAR(8593)
+			VAR _ArrowDown = UNICHAR(8595)
+			
+			-- Up if positive, otherwise down
+			VAR _Result = IF ( _Delta > 0, _ArrowUp, _ArrowDown ) 
+			
+			RETURN
+			_Result
+			```
+		displayFolder: Total Sales\2. Delta
+		lineageTag: 61f05966-a771-48b1-97d4-db2ad5b94b98
+
+	measure 'Card Placeholder' =
+			""
+			-- Empty measure that work as placeholder to create visual cards
+		displayFolder: Visual
+		lineageTag: 1158e0d8-1893-4ed1-9132-08014f462076
+
+	measure 'Last Month Comparison Label' = "Compared to last month"
+		displayFolder: Visual
+		lineageTag: 7d83686a-388f-4d4e-972a-e60e3f6161ab
+
+	measure Profit =
+			
+			CALCULATE(
+			    SUMX( FACTSales, [Profit] )
+			)
+		displayFolder: Profit
+		lineageTag: e673c809-4ffd-4d69-8342-4eea3ec6198c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Profit CM' = ```
+			
+			-- This measures calculates profit of the most recent month
+			
+			-- Finds most recent month with data, prevents return future dates with no values
+			VAR _MaxDate = MAX( FACTSales[Date] )
+			
+			VAR _Result = 
+			CALCULATE(
+			    [Profit],
+			    DIMCalendar[YearNumber] = YEAR( _MaxDate ),
+			    DIMCalendar[MonthNumber] = MONTH( _MaxDate )
+			)
+			
+			RETURN
+			_Result
+			```
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		displayFolder: Profit
+		lineageTag: 26108ec6-6946-4764-95ab-ee0d74ee1bd8
+
+	measure 'Profit MTD Delta Pct' = ```
+			
+			-- Calculates delta of current month and prior month, then returns percentage
+			
+			-- Delta percentage calculation
+			VAR _CM = [Profit CM]
+			VAR _PM = [Profit PM]
+			VAR _Delta = _CM - _PM
+			VAR _DeltaPct = FORMAT( DIVIDE( _Delta, _PM ), "+0.0%;-0.0%" )
+			
+			RETURN
+			_DeltaPct
+			
+			
+			```
+		displayFolder: Profit
+		lineageTag: b90d5cc1-709e-4c58-a042-c4e3fd9364a6
+
+	measure 'Profit MTD Delta Pct Arrow' = ```
+			
+			-- Returns Unichar arrow based on CM delta percentage
+			-- Source: https://www.nudgebi.com/unicode-library
+			
+			-- Delta percentage calculation
+			VAR _CM = [Profit CM]
+			VAR _PM = [Profit PM]
+			VAR _Delta = _CM - _PM
+			
+			-- Unichar arrows setup
+			VAR _ArrowUp = UNICHAR(8593)
+			VAR _ArrowDown = UNICHAR(8595)
+			
+			-- Up if positive, otherwise down
+			VAR _Result = IF ( _Delta > 0, _ArrowUp, _ArrowDown ) 
+			
+			RETURN
+			_Result
+			```
+		displayFolder: Profit
+		lineageTag: 49722d53-dc70-455e-af2a-0ffe951a8619
+
+	measure 'Profit PM' = ```
+			
+			-- This measures calculates total sales of the most recent month prior month
+			
+			-- Finds most recent month with data, prevents return future dates with no values
+			VAR _MaxDate = MAX( FACTSales[Date] )
+			
+			VAR _Result = 
+			CALCULATE(
+			    [Profit],
+			    DIMCalendar[YearNumber] = YEAR( _MaxDate ),
+			    DIMCalendar[MonthNumber] = MONTH( _MaxDate ) -1
+			)
+			
+			RETURN
+			_Result
+			```
+		displayFolder: Profit
+		lineageTag: e799d4a9-af76-401e-894e-7563bdf414e6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Units Sold' =
+			
+			CALCULATE(
+			    SUMX( FACTSales, [Units Sold] )
+			)
+		displayFolder: Units Sold
+		lineageTag: 53fdea7b-3da3-47af-b1b8-5b3de9fa6a08
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Units Sold CM' = ```
+			
+			-- This measures calculates units sold of the most recent month
+			
+			-- Finds most recent month with data, prevents return future dates with no values
+			VAR _MaxDate = MAX( FACTSales[Date] )
+			
+			VAR _Result = 
+			CALCULATE(
+			    [Units Sold],
+			    DIMCalendar[YearNumber] = YEAR( _MaxDate ),
+			    DIMCalendar[MonthNumber] = MONTH( _MaxDate )
+			)
+			
+			RETURN
+			_Result
+			```
+		formatString: #,0
+		displayFolder: Units Sold
+		lineageTag: ca5750ce-db67-46d6-8014-7a2827fe9406
+
+	measure 'Units Sold MTD Delta Pct' = ```
+			
+			-- Calculates delta of current month and prior month, then returns percentage
+			
+			-- Delta percentage calculation
+			VAR _CM = [Units Sold CM]
+			VAR _PM = [Units Sold PM]
+			VAR _Delta = _CM - _PM
+			VAR _DeltaPct = FORMAT( DIVIDE( _Delta, _PM ), "+0.0%;-0.0%" )
+			
+			RETURN
+			_DeltaPct
+			
+			
+			```
+		displayFolder: Units Sold
+		lineageTag: 5b36f8bb-2268-4cab-ad0f-e756207a1447
+
+	measure 'Units Sold MTD Delta Pct Arrow' = ```
+			
+			-- Returns Unichar arrow based on CM delta percentage
+			-- Source: https://www.nudgebi.com/unicode-library
+			
+			-- Delta percentage calculation
+			VAR _CM = [Units Sold CM]
+			VAR _PM = [Units Sold PM]
+			VAR _Delta = _CM - _PM
+			
+			-- Unichar arrows setup
+			VAR _ArrowUp = UNICHAR(8593)
+			VAR _ArrowDown = UNICHAR(8595)
+			
+			-- Up if positive, otherwise down
+			VAR _Result = IF ( _Delta > 0, _ArrowUp, _ArrowDown ) 
+			
+			RETURN
+			_Result
+			```
+		displayFolder: Units Sold
+		lineageTag: 85bedd71-ea68-4aa7-abdd-38cf37fcab19
+
+	measure 'Units Sold PM' = ```
+			
+			-- This measures calculates total units of the most recent month prior month
+			
+			-- Finds most recent month with data, prevents return future dates with no values
+			VAR _MaxDate = MAX( FACTSales[Date] )
+			
+			VAR _Result = 
+			CALCULATE(
+			    [Units Sold],
+			    DIMCalendar[YearNumber] = YEAR( _MaxDate ),
+			    DIMCalendar[MonthNumber] = MONTH( _MaxDate ) -1
+			)
+			
+			RETURN
+			_Result
+			```
+		displayFolder: Units Sold
+		lineageTag: e17945f2-d39f-4164-b113-dc24a1c7d304
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total COGS' =
+			
+			CALCULATE(
+			    SUMX( FACTSales, [COGS] )
+			)
+		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
+		displayFolder: COGS
+		lineageTag: 5d149cad-dcaa-4a44-9620-edee85aa7830
+
+	measure 'Total COGS CM' = ```
+			
+			-- This measures calculates total sales of the most recent month
+			
+			-- Finds most recent month with data, prevents return future dates with no values
+			VAR _MaxDate = MAX( FACTSales[Date] )
+			
+			VAR _Result = 
+			CALCULATE(
+			    [Total COGS],
+			    DIMCalendar[YearNumber] = YEAR( _MaxDate ),
+			    DIMCalendar[MonthNumber] = MONTH( _MaxDate )
+			)
+			
+			RETURN
+			_Result
+			```
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		displayFolder: COGS
+		lineageTag: 682e24dc-90c4-474c-b7a3-3fd9f7e18199
+
+	measure 'Total COGS MTD Delta Pct' = ```
+			
+			-- Calculates delta of current month and prior month, then returns percentage
+			
+			-- Delta percentage calculation
+			VAR _CM = [Total COGS CM]
+			VAR _PM = [Total COGS PM]
+			VAR _Delta = _CM - _PM
+			VAR _DeltaPct = FORMAT( DIVIDE( _Delta, _PM ), "+0.0%;-0.0%" )
+			
+			RETURN
+			_DeltaPct
+			
+			
+			```
+		displayFolder: COGS
+		lineageTag: fbee47f7-a15a-4ead-a84a-2a351a003f91
+
+	measure 'Total COGS MTD Delta Pct Arrow' = ```
+			
+			-- Returns Unichar arrow based on CM delta percentage
+			-- Source: https://www.nudgebi.com/unicode-library
+			
+			-- Delta percentage calculation
+			VAR _CM = [Total COGS CM]
+			VAR _PM = [Total COGS PM]
+			VAR _Delta = _CM - _PM
+			
+			-- Unichar arrows setup
+			VAR _ArrowUp = UNICHAR(8593)
+			VAR _ArrowDown = UNICHAR(8595)
+			
+			-- Up if positive, otherwise down
+			VAR _Result = IF ( _Delta > 0, _ArrowUp, _ArrowDown ) 
+			
+			RETURN
+			_Result
+			```
+		displayFolder: COGS
+		lineageTag: 9c7ebad0-2783-46ac-80a0-52f4bdd47ba9
+
+	measure 'Total COGS PM' = ```
+			
+			-- This measures calculates total sales of the most recent month prior month
+			
+			-- Finds most recent month with data, prevents return future dates with no values
+			VAR _MaxDate = MAX( FACTSales[Date] )
+			
+			VAR _Result = 
+			CALCULATE(
+			    [Total COGS],
+			    DIMCalendar[YearNumber] = YEAR( _MaxDate ),
+			    DIMCalendar[MonthNumber] = MONTH( _MaxDate ) -1
+			)
+			
+			RETURN
+			_Result
+			```
+		displayFolder: COGS
+		lineageTag: dd921762-8ce7-44c2-b4f6-bd35098809eb
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Sales Revenue Max Value' = ```
+			
+			-- This measure is used to set the max placeholder value
+			-- It is calculated by adding 15% uop to the max value of the series
+			
+			VAR _Tbl =  
+			    SUMMARIZECOLUMNS ( 
+			        DIMCalendar[Date],
+			        "@Revenue", [Total Sales Revenue]
+			    ) -- Creates a virtual table with total sales revenue by month
+			
+			VAR _Max = 
+			    MAXX ( 
+			        _Tbl,
+			        [@Revenue]
+			    ) -- Iterates over the virtual table to retrive the max value of the time series
+			
+			VAR _Result = _Max * 1.15 -- 15% as buffer for visual 
+			
+			RETURN
+			_Result
+			```
+		displayFolder: Total Sales\3. Visual
+		lineageTag: a29f337a-7786-49de-b1eb-0a028024c75a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Trend Chart Label Min' =
+			
+			// Purpose: Retrieve the month and year string for the minimum date selected.
+			// This measure first finds the earliest date in the filtered calendar,
+			// then uses LOOKUPVALUE to get the corresponding "MMM, YYYY" label.
+			
+			VAR _MinDate = CALCULATE( MINX ( DIMCalendar, [Date] ) )
+			VAR _LookUpLabel = LOOKUPVALUE( DIMCalendar[Date MMMYYYY], DIMCalendar[Date], _MinDate )
+			RETURN
+			_LookUpLabel
+		displayFolder: Total Sales\3. Visual
+		lineageTag: 35e1caa9-318f-4cae-a0c0-50fe6dda0029
+
+	measure 'Trend Chart Label Max' =
+			
+			// Purpose: Retrieve the month and year string for the maximum date range.
+			// This measure first finds the earliest date in the filtered calendar,
+			// then uses LOOKUPVALUE to get the corresponding "MMM, YYYY" label.
+			
+			VAR _MaxDate = CALCULATE( MAXX( DIMCalendar, [Date] ) )
+			VAR _LookUpLabel = LOOKUPVALUE( DIMCalendar[Date MMMYYYY], DIMCalendar[Date], _MaxDate )
+			RETURN
+			_LookUpLabel
+		displayFolder: Total Sales\3. Visual
+		lineageTag: 59b93fe3-8c4d-4950-a348-8bbf16f82e81
+
+	partition '[ Measures ]' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

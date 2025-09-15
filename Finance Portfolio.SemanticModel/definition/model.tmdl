@@ -1,0 +1,26 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["FACTSales","[ Measures ]"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.146.1454.0 (25.08)+901d6c338d1dea81ac3e53073ffb10469f0f37b8
+
+annotation __TEdtr = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table FACTSales
+ref table '[ Measures ]'
+ref table DIMCalendar
+ref table DateTableTemplate_fdbdd09f-0356-4795-8b4a-b2e2d9a9b696
+ref table LocalDateTable_f982cd2f-bdb3-47e7-892a-f7de54a71f8e
+
+ref cultureInfo en-US
+

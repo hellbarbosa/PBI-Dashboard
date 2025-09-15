@@ -1,0 +1,9 @@
+relationship 781efade-d490-4cfe-a2b4-8899926876c1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DIMCalendar.Date
+	toColumn: LocalDateTable_f982cd2f-bdb3-47e7-892a-f7de54a71f8e.Date
+
+relationship 8d70bfe0-8690-f5c2-27c3-6ea5dc823771
+	fromColumn: FACTSales.Date
+	toColumn: DIMCalendar.Date
+

@@ -1,0 +1,99 @@
+table DIMCalendar
+	lineageTag: fc8b9d2a-8c10-4e21-8167-970793369dce
+
+	column Date
+		formatString: General Date
+		lineageTag: 91be9f51-ce7b-4607-bd41-6e7e01641dfc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 781efade-d490-4cfe-a2b4-8899926876c1
+			defaultHierarchy: LocalDateTable_f982cd2f-bdb3-47e7-892a-f7de54a71f8e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date MMDDYYYY'
+		lineageTag: f0287537-d135-457e-89fb-340052f90e7d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date MMDDYYYY]
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearNumber
+		formatString: 0
+		lineageTag: 0ee4a24f-8e84-4ac6-a7da-4c808944293f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [YearNumber]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNumber
+		formatString: 0
+		lineageTag: 3dcfb91e-febb-42b5-83bf-124222ba3937
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [MonthNumber]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date MMMYYYY'
+		displayFolder: Text Format
+		lineageTag: 68c729a5-6167-498d-b5dd-ca787bfd5727
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date MMMYYYY]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIMCalendar = calculated
+		mode: import
+		source = ```
+				
+				-- Creates calendar dimension table using a single dax expression
+				-- Uses FACTSales to find dynamic date interval
+				
+				VAR _MaxDate = MAX ( FACTSales[Date] )
+				VAR _MinDate = MIN( FACTSales[Date] )
+				VAR _Date = 
+				CALENDAR(
+				    _MinDate,
+				    _MaxDate
+				)
+				
+				VAR _DateMMDDYYYY = 
+				ADDCOLUMNS(
+				    _Date,
+				    "Date MMDDYYYY", FORMAT( [Date], "MM/DD/YYYY" )
+				)
+				
+				VAR _YearNumber = 
+				ADDCOLUMNS(
+				    _DateMMDDYYYY,
+				    "YearNumber", YEAR( [Date] )
+				)
+				
+				VAR _MonthNumber = 
+				ADDCOLUMNS(
+				    _YearNumber,
+				    "MonthNumber", MONTH( [Date] )
+				)
+				
+				VAR _DateMMMYYYY = 
+				ADDCOLUMNS(
+				    _MonthNumber,
+				    "Date MMMYYYY", FORMAT ( [Date], "mmm, yyyy")
+				)
+				 
+				
+				RETURN
+				_DateMMMYYYY
+				
+				```
+
+	annotation PBI_Id = 7abe8b65bb3b4656a475470a41b9b51b
+

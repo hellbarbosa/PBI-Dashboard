@@ -1,0 +1,166 @@
+table FACTSales
+	lineageTag: a3bd557b-b5bc-4ec8-b5c8-196fffcfbaf7
+
+	column Segment
+		dataType: string
+		lineageTag: c28377d2-87e6-4a60-abd6-b7d7fd68c59e
+		summarizeBy: none
+		sourceColumn: Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 332b35a2-873b-40a5-8790-4773005a91e3
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product
+		dataType: string
+		lineageTag: debf7d04-dde0-42a8-b735-c4654c6c7b7d
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Discount Band'
+		dataType: string
+		lineageTag: c6b285cf-4e68-4dbe-8249-d5d19af1454d
+		summarizeBy: none
+		sourceColumn: Discount Band
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Units Sold'
+		dataType: double
+		lineageTag: b3c0fa5c-8dfc-4366-9473-81a6a1166a64
+		summarizeBy: sum
+		sourceColumn: Units Sold
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Manufacturing Price'
+		dataType: int64
+		formatString: 0
+		lineageTag: 52eb8603-9e71-4caa-b8c8-54a383433237
+		summarizeBy: sum
+		sourceColumn: Manufacturing Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sale Price'
+		dataType: int64
+		formatString: 0
+		lineageTag: 67d95f8f-e830-4f6f-838a-a4094e016180
+		summarizeBy: sum
+		sourceColumn: Sale Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gross Sales'
+		dataType: double
+		lineageTag: 70e7b408-9a14-4aad-a623-8f6fa7292dc6
+		summarizeBy: sum
+		sourceColumn: Gross Sales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Discounts
+		dataType: double
+		lineageTag: 68ddfa8c-9c16-497d-8b58-f302ce9f37b3
+		summarizeBy: sum
+		sourceColumn: Discounts
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Sales
+		dataType: double
+		lineageTag: b48c097c-513a-4eba-be8f-dc6b86cbce3c
+		summarizeBy: sum
+		sourceColumn: Sales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column COGS
+		dataType: double
+		lineageTag: 39399a7f-b0f7-4150-8f4c-9de9c2a8a6ea
+		summarizeBy: sum
+		sourceColumn: COGS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Profit
+		dataType: double
+		lineageTag: c6f5fd11-689c-4eff-9889-793bdbf7a64a
+		summarizeBy: sum
+		sourceColumn: Profit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Date
+		dataType: dateTime
+		formatString: mm/dd/yyyy
+		lineageTag: b4cedf91-5ad0-4b64-8987-1400216fdaf6
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Month Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: b92be9d9-b22a-487e-ac41-d3e17e8f1d6b
+		summarizeBy: sum
+		sourceColumn: Month Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		dataType: string
+		lineageTag: 930d923a-9902-40ec-a26c-a243cf1d1003
+		summarizeBy: none
+		sourceColumn: Month Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b837789-30c6-4b6a-bec1-3aabbb692afb
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FACTSales = m
+		mode: import
+		source =
+				let
+				 Source = Excel.Workbook(File.Contents("C:\Program Files\WindowsApps\Microsoft.MicrosoftPowerBIDesktop_2.144.1378.0_x64__8wekyb3d8bbwe\bin\SampleData\Financial Sample.xlsx"), null, true),
+				    financials_Table = Source{[Item="financials",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(financials_Table,{{"Segment", type text}, {"Country", type text}, {"Product", type text}, {"Discount Band", type text}, {"Units Sold", type number}, {"Manufacturing Price", Int64.Type}, {"Sale Price", Int64.Type}, {"Gross Sales", type number}, {"Discounts", type number}, {"Sales", type number}, {"COGS", type number}, {"Profit", type number}, {"Date", type date}, {"Month Number", Int64.Type}, {"Month Name", type text}, {"Year", Int64.Type}})
+				in
+				 #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+
