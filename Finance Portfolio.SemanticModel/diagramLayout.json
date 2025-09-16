@@ -10,7 +10,7 @@
       "nodes": [
         {
           "location": {
-            "x": 1530.7226004170466,
+            "x": 1412.3386160489795,
             "y": 0
           },
           "nodeIndex": "[ Measures ]",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 0,
-            "y": 244.46467634357742
+            "y": 238.82734375462184
           },
           "nodeIndex": "FACTSales",
           "nodeLineageTag": "a3bd557b-b5bc-4ec8-b5c8-196fffcfbaf7",
@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 633,
-            "y": 0
+            "x": 490.65735212887148,
+            "y": 1.4093331472388968
           },
           "nodeIndex": "DIMCalendar",
           "nodeLineageTag": "fc8b9d2a-8c10-4e21-8167-970793369dce",
@@ -49,7 +49,7 @@
         },
         {
           "location": {
-            "x": 358,
+            "x": 232.5693498957383,
             "y": 0
           },
           "nodeIndex": "DIMCountry",
@@ -62,7 +62,7 @@
         },
         {
           "location": {
-            "x": 943.75471542340915,
+            "x": 752.08540739891941,
             "y": 0
           },
           "nodeIndex": "DIMProducts",
@@ -75,7 +75,7 @@
         },
         {
           "location": {
-            "x": 1228.4400111656664,
+            "x": 1009.9933733436376,
             "y": 0
           },
           "nodeIndex": "DIMDiscountBand",

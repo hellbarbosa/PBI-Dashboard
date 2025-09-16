@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "5f59664bf16f486bab10",
   "position": {
-    "x": 772.5,
-    "y": 560,
+    "x": 775,
+    "y": 562.5,
     "z": 18000,
-    "height": 175,
-    "width": 326.25,
+    "height": 182.5,
+    "width": 320,
     "tabOrder": 17000
   },
   "visual": {
@@ -577,7 +577,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
@@ -586,5 +586,57 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "311d17d06c95003ef7f6",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FACTSales"
+              }
+            },
+            "Property": "Discount Band"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "23d32a3aa78a9869e997",
+        "field": {
+          "Arithmetic": {
+            "Left": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "[ Measures ]"
+                  }
+                },
+                "Property": "Units Sold"
+              }
+            },
+            "Right": {
+              "ScopedEval": {
+                "Expression": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "[ Measures ]"
+                      }
+                    },
+                    "Property": "Units Sold"
+                  }
+                },
+                "Scope": []
+              }
+            },
+            "Operator": 3
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

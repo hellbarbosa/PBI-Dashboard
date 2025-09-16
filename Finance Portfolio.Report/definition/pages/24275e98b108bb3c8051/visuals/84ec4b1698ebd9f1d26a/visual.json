@@ -328,9 +328,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.3
+                    "Literal": {
+                      "Value": "'#B3B3B3'"
                     }
                   }
                 }
@@ -535,5 +534,51 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "9bd6473e029bbe24484d"
+  "parentGroupName": "9bd6473e029bbe24484d",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6da0e99b1ae11c9f7e02",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "[ Measures ]"
+              }
+            },
+            "Property": "Total Sales Revenue CM"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "49e509334aa6c37c3301",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIMProducts"
+              }
+            },
+            "Property": "Product"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "099b51b95fe0f2be243a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "[ Measures ]"
+              }
+            },
+            "Property": "Total Sales Revenue MTD Delta Pct"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
 }

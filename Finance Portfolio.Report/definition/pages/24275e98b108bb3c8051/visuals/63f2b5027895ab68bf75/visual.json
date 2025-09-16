@@ -3,10 +3,10 @@
   "name": "63f2b5027895ab68bf75",
   "position": {
     "x": 772.5,
-    "y": 750,
+    "y": 733.75,
     "z": 17000,
-    "height": 127.5,
-    "width": 321.25
+    "height": 128.75,
+    "width": 328.75
   },
   "visual": {
     "visualType": "tableEx",
@@ -19,15 +19,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DIMProducts"
+                      "Entity": "DIMDiscountBand"
                     }
                   },
-                  "Property": "Product"
+                  "Property": "Discount Band"
                 }
               },
-              "queryRef": "DIMProducts.Product",
-              "nativeQueryRef": "Name",
-              "displayName": "Name"
+              "queryRef": "DIMDiscountBand.Discount Band",
+              "nativeQueryRef": "Discount Band"
             },
             {
               "field": {
@@ -37,12 +36,11 @@
                       "Entity": "[ Measures ]"
                     }
                   },
-                  "Property": "Total Sales Revenue CM"
+                  "Property": "Units Sold CM"
                 }
               },
-              "queryRef": "[ Measures ].Total Sales Revenue CM",
-              "nativeQueryRef": "Revenue",
-              "displayName": "Revenue"
+              "queryRef": "[ Measures ].Units Sold CM",
+              "nativeQueryRef": "Units Sold CM"
             }
           ]
         }
@@ -51,13 +49,13 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "[ Measures ]"
+                    "Entity": "DIMDiscountBand"
                   }
                 },
-                "Property": "Total Sales Revenue CM"
+                "Property": "Discount Band"
               }
             },
             "direction": "Descending"
@@ -86,13 +84,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "106.12845958271416D"
+                  "Value": "206.41666666666669D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "DIMProducts.Product"
+            "metadata": "DIMDiscountBand.Discount Band"
           }
         },
         {
@@ -100,13 +98,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "78.44444200059569D"
+                  "Value": "74D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "[ Measures ].Total Sales Revenue CM"
+            "metadata": "[ Measures ].Units Sold CM"
           }
         }
       ],
@@ -137,7 +135,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#4D4D4D'"
+                      "Value": "'#b3b3b3'"
                     }
                   }
                 }
@@ -148,7 +146,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#4D4D4D'"
+                      "Value": "'#b3b3b3'"
                     }
                   }
                 }
@@ -167,6 +165,25 @@
                   "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
                 }
               }
+            },
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -177,14 +194,14 @@
             "rowPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "6D"
                 }
               }
             },
             "gridHorizontal": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -192,10 +209,18 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#FFFFFF'"
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -264,44 +289,26 @@
                   "Value": "false"
                 }
               }
-            }
-          }
-        }
-      ],
-      "columnFormatting": [
-        {
-          "properties": {
-            "styleHeader": {
+            },
+            "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "0D"
                 }
               }
             },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
-          },
-          "selector": {
-            "metadata": "[ Measures ].Total Sales Revenue CM"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Left'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "DIMProducts.Product"
           }
         }
       ]
@@ -379,7 +386,7 @@
             "bottom": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "0D"
                 }
               }
             }
@@ -414,5 +421,95 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ad7a61316d8218b74b8a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIMDiscountBand"
+              }
+            },
+            "Property": "Discount Band"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "DIMDiscountBand",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "d"
+                              }
+                            },
+                            "Property": "Discount Band"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'None'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "3865f8b8a8c7363fd44b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "[ Measures ]"
+              }
+            },
+            "Property": "Units Sold CM"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
