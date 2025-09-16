@@ -10,7 +10,7 @@
       "nodes": [
         {
           "location": {
-            "x": 959.94267578529411,
+            "x": 1306.6386300060624,
             "y": 0
           },
           "nodeIndex": "[ Measures ]",
@@ -61,10 +61,11 @@
         },
         {
           "location": {
-            "x": 1243.9426757852939,
-            "y": 305.07928988028209
+            "x": 943.75471542340915,
+            "y": 0
           },
           "nodeIndex": "DIMProducts",
+          "nodeLineageTag": "1f303564-a727-444d-b963-dee810e2dceb",
           "size": {
             "height": 200,
             "width": 234

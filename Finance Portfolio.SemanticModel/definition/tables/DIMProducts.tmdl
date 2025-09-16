@@ -11,7 +11,10 @@ table DIMProducts
 
 	partition DIMProducts = calculated
 		mode: import
-		source = DISTINCT ( FACTSales[Product] )
+		source =
+				
+				-- Creates DIMProduct dimension table
+				DISTINCT ( FACTSales[Product] )
 
 	annotation PBI_Id = 39cb36889842499bbdbcac476f275d3d
 

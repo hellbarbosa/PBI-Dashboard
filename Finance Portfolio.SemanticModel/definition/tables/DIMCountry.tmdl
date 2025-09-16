@@ -11,7 +11,10 @@ table DIMCountry
 
 	partition DIMCountry = calculated
 		mode: import
-		source = DISTINCT ( FACTSales[Country] )
+		source =
+				
+				-- Creates DIMCountry dimension table
+				DISTINCT ( FACTSales[Country] )
 
 	annotation PBI_Id = 11832e8f7b4c4ea5ae6d7d33ea51a1fe
 

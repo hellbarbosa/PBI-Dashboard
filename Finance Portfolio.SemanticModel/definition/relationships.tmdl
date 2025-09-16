@@ -7,6 +7,10 @@ relationship 8d70bfe0-8690-f5c2-27c3-6ea5dc823771
 	fromColumn: FACTSales.Date
 	toColumn: DIMCalendar.Date
 
+relationship 2c247049-d35c-84e0-f23f-f8f6454b2611
+	fromColumn: FACTSales.Product
+	toColumn: DIMProducts.Product
+
 relationship 7387a0d7-7f59-f6dc-5d8b-96ecb843e16c
 	fromColumn: FACTSales.Country
 	toColumn: DIMCountry.Country

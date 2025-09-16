@@ -260,6 +260,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "product": {
@@ -2031,6 +2034,16 @@ cultureInfo en-US
 			        {
 			          "total sales revenue MTD delta pct": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Delta MoM %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -4211,8 +4224,7 @@ cultureInfo en-US
 			            "Weight": 0.736
 			          }
 			        }
-			      ],
-			      "NameType": "Name"
+			      ]
 			    },
 			    "DIM_product": {
 			      "Definition": {
@@ -4340,10 +4352,44 @@ cultureInfo en-US
 			            "Weight": 0.9
 			          }
 			        }
-			      ]
+			      ],
+			      "NameType": "Name"
 			    }
 			  },
 			  "Relationships": {
+			    "DIM_calendar_date_date_hierarchy_has_DIM_calendar_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "DIMCalendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "DIM_calendar.date.year": {
+			          "Target": {
+			            "Entity": "DIM_calendar.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "DIM_calendar.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
 			    "DIM_calendar_date_has_date_hierarchy": {
 			      "Binding": {
 			        "ConceptualEntity": "DIMCalendar"
@@ -4423,6 +4469,52 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "FACT_sale_has_DIM_product": {
+			      "Binding": {
+			        "ConceptualEntity": "FACTSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FACT_sale": {
+			          "Target": {
+			            "Entity": "FACT_sale"
+			          }
+			        },
+			        "DIM_product": {
+			          "Target": {
+			            "Entity": "DIM_product"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FACT_sale"
+			            },
+			            "Object": {
+			              "Role": "DIM_product"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FACT_sales_have_DIM_products"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_product"
+			            },
+			            "Object": {
+			              "Role": "FACT_sale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_products_have_FACT_sales"
+			        }
+			      ]
+			    },
 			    "FACT_sale_has_DIM_calendar": {
 			      "Binding": {
 			        "ConceptualEntity": "FACTSales"
@@ -4499,6 +4591,19 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "DIM_products_have_products"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "DIM_product"
+			            },
+			            "Name": {
+			              "Role": "DIM_product.product"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "products_are_names_IDs_of_DIM_products"
 			        }
 			      ]
 			    },
@@ -4532,19 +4637,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "DIM_countries_have_countries"
-			        },
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "DIM_country"
-			            },
-			            "Name": {
-			              "Role": "DIM_country.country"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "countries_are_names_IDs_of_DIM_countries"
 			        }
 			      ]
 			    },
@@ -6120,39 +6212,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "FACT_sale_has_product": {
-			      "Binding": {
-			        "ConceptualEntity": "FACTSales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FACT_sale": {
-			          "Target": {
-			            "Entity": "FACT_sale"
-			          }
-			        },
-			        "FACT_sale.product": {
-			          "Target": {
-			            "Entity": "FACT_sale.product"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FACT_sale"
-			            },
-			            "Object": {
-			              "Role": "FACT_sale.product"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "FACT_sales_have_products"
-			        }
-			      ]
-			    },
 			    "FACT_sale_has_segment": {
 			      "Binding": {
 			        "ConceptualEntity": "FACTSales"
@@ -6231,36 +6290,48 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "DIM_calendar_date_date_hierarchy_has_DIM_calendar_date_year": {
+			    "DIM_country_in_country": {
 			      "Binding": {
-			        "ConceptualEntity": "DIMCalendar"
+			        "ConceptualEntity": "DIMCountry"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "DIM_calendar.date.date_hierarchy": {
+			        "DIM_country": {
 			          "Target": {
-			            "Entity": "DIM_calendar.date.date_hierarchy"
+			            "Entity": "DIM_country"
 			          }
 			        },
-			        "DIM_calendar.date.year": {
+			        "DIM_country.country": {
 			          "Target": {
-			            "Entity": "DIM_calendar.date.year"
+			            "Entity": "DIM_country.country"
 			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "DIM_country.country"
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Attribute": {
+			          "Preposition": {
 			            "Subject": {
-			              "Role": "DIM_calendar.date.date_hierarchy"
+			              "Role": "DIM_country"
 			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
 			            "Object": {
-			              "Role": "DIM_calendar.date.year"
+			              "Role": "DIM_country.country"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years"
+			          "ID": "DIM_countries_are_in_countries"
 			        }
 			      ]
 			    },
