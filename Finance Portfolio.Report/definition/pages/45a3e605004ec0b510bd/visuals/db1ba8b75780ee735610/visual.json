@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "db1ba8b75780ee735610",
+  "position": {
+    "x": 31,
+    "y": 13,
+    "z": 1000,
+    "height": 24,
+    "width": 27,
+    "tabOrder": 1000
+  },
+  "visualGroup": {
+    "displayName": "Alert toggle",
+    "groupMode": "ScaleMode"
+  },
+  "parentGroupName": "37162fdb6b73ed620292"
+}

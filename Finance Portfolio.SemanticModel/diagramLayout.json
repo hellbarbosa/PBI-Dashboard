@@ -10,7 +10,7 @@
       "nodes": [
         {
           "location": {
-            "x": 1306.6386300060624,
+            "x": 1530.7226004170466,
             "y": 0
           },
           "nodeIndex": "[ Measures ]",
@@ -19,7 +19,7 @@
             "height": 810.15857976056418,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 6
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 4
         },
         {
           "location": {
@@ -42,10 +42,10 @@
           "nodeIndex": "DIMCalendar",
           "nodeLineageTag": "fc8b9d2a-8c10-4e21-8167-970793369dce",
           "size": {
-            "height": 200,
+            "height": 145,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 5
         },
         {
           "location": {
@@ -53,11 +53,12 @@
             "y": 0
           },
           "nodeIndex": "DIMCountry",
+          "nodeLineageTag": "1ba67b54-4f3b-4b1e-b0db-171c80d65767",
           "size": {
-            "height": 200,
+            "height": 145,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
@@ -67,10 +68,23 @@
           "nodeIndex": "DIMProducts",
           "nodeLineageTag": "1f303564-a727-444d-b963-dee810e2dceb",
           "size": {
-            "height": 200,
+            "height": 145,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1228.4400111656664,
+            "y": 0
+          },
+          "nodeIndex": "DIMDiscountBand",
+          "nodeLineageTag": "f94c0a0c-3450-4a90-8c3b-df02e61a4dc3",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 3
         }
       ],
       "name": "All tables",

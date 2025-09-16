@@ -1,0 +1,21 @@
+table DIMDiscountBand
+	lineageTag: f94c0a0c-3450-4a90-8c3b-df02e61a4dc3
+
+	column 'Discount Band'
+		lineageTag: a063d11d-2098-44ca-a7b2-6865d81ab714
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: FACTSales[Discount Band]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIMDiscountBand = calculated
+		mode: import
+		source = ```
+				
+				-- Creates DIMDiscountBand dimension table
+				DISTINCT ( FACTSales[Discount Band] ) 
+				```
+
+	annotation PBI_Id = 83aab49f3414448da30fe429caba512e
+

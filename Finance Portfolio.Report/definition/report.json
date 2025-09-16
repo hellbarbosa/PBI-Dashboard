@@ -1,0 +1,139 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.0.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU10",
+      "reportVersionAtImport": {
+        "visual": "1.8.101",
+        "report": "2.0.101",
+        "page": "1.3.101"
+      },
+      "type": "SharedResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "alert-off-black49139668569129213.svg",
+          "path": "alert-off-black49139668569129213.svg",
+          "type": "Image"
+        },
+        {
+          "name": "alert-on-black8430665528559632.svg",
+          "path": "alert-on-black8430665528559632.svg",
+          "type": "Image"
+        },
+        {
+          "name": "app-icon-white43863298971180253.svg",
+          "path": "app-icon-white43863298971180253.svg",
+          "type": "Image"
+        },
+        {
+          "name": "cost-icon-black4368956714445966.svg",
+          "path": "cost-icon-black4368956714445966.svg",
+          "type": "Image"
+        },
+        {
+          "name": "cost-icon-dt7036611386467053.svg",
+          "path": "cost-icon-dt7036611386467053.svg",
+          "type": "Image"
+        },
+        {
+          "name": "dark-mode-toggle-light3334973092341511.svg",
+          "path": "dark-mode-toggle-light3334973092341511.svg",
+          "type": "Image"
+        },
+        {
+          "name": "gradient-bg8906389791542044.png",
+          "path": "gradient-bg8906389791542044.png",
+          "type": "Image"
+        },
+        {
+          "name": "product-icon-black7104355084588695.svg",
+          "path": "product-icon-black7104355084588695.svg",
+          "type": "Image"
+        },
+        {
+          "name": "product-icon-dt01799979370473015.svg",
+          "path": "product-icon-dt01799979370473015.svg",
+          "type": "Image"
+        },
+        {
+          "name": "profit-icon-black23725424522333427.svg",
+          "path": "profit-icon-black23725424522333427.svg",
+          "type": "Image"
+        },
+        {
+          "name": "profit-icon-dt40022867631613723.svg",
+          "path": "profit-icon-dt40022867631613723.svg",
+          "type": "Image"
+        },
+        {
+          "name": "sales-icon-black49084519039356234.svg",
+          "path": "sales-icon-black49084519039356234.svg",
+          "type": "Image"
+        },
+        {
+          "name": "sales-icon-dt30020890119721144.svg",
+          "path": "sales-icon-dt30020890119721144.svg",
+          "type": "Image"
+        },
+        {
+          "name": "sales-icon-dt669759715812752.svg",
+          "path": "sales-icon-dt669759715812752.svg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY24SU10",
+          "path": "BaseThemes/CY24SU10.json",
+          "type": "BaseTheme"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

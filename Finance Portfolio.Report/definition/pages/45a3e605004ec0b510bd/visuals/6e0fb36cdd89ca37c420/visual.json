@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "6e0fb36cdd89ca37c420",
+  "position": {
+    "x": 649,
+    "y": 121.81818181818181,
+    "z": 7000,
+    "height": 120.90909090909089,
+    "width": 219.99999999999997,
+    "tabOrder": 5000
+  },
+  "visualGroup": {
+    "displayName": "Units Sold Card",
+    "groupMode": "ScaleMode"
+  }
+}

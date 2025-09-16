@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "cfac600950d0ba4bc124",
+  "position": {
+    "x": 417,
+    "y": 122,
+    "z": 8000,
+    "height": 121,
+    "width": 220,
+    "tabOrder": 6000
+  },
+  "visualGroup": {
+    "displayName": "Profit card",
+    "groupMode": "ScaleMode"
+  }
+}

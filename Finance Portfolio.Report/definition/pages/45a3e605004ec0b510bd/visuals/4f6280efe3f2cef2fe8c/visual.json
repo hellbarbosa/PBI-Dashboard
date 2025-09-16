@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "4f6280efe3f2cef2fe8c",
+  "position": {
+    "x": 185.55555555555554,
+    "y": 257.77777777777777,
+    "z": 4500,
+    "height": 291.11111111111114,
+    "width": 574.44444444444446,
+    "tabOrder": 13000
+  },
+  "visualGroup": {
+    "displayName": "Total Sales trend chart",
+    "groupMode": "ScaleMode"
+  }
+}

@@ -15,3 +15,7 @@ relationship 7387a0d7-7f59-f6dc-5d8b-96ecb843e16c
 	fromColumn: FACTSales.Country
 	toColumn: DIMCountry.Country
 
+relationship b25afe60-bd92-3647-a7ae-b4d1b34c0166
+	fromColumn: FACTSales.'Discount Band'
+	toColumn: DIMDiscountBand.'Discount Band'
+
