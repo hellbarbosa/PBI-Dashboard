@@ -1,12 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
-  "name": "63f2b5027895ab68bf75",
+  "name": "25bf8179df6295b24733",
   "position": {
     "x": 0,
     "y": 170,
-    "z": 17000,
+    "z": 17875,
     "height": 128.75,
-    "width": 328.75
+    "width": 328.75,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "tableEx",
@@ -122,9 +123,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#262626'"
                     }
                   }
                 }
@@ -135,7 +135,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#b3b3b3'"
+                      "Value": "'#666666'"
                     }
                   }
                 }
@@ -146,7 +146,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#b3b3b3'"
+                      "Value": "'#666666'"
                     }
                   }
                 }
@@ -180,6 +180,17 @@
                     "ThemeDataColor": {
                       "ColorId": 0,
                       "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "backColorPrimary": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#262626'"
                     }
                   }
                 }
@@ -223,6 +234,17 @@
                   "Value": "0D"
                 }
               }
+            },
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#666666'"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -254,9 +276,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#262626'"
                     }
                   }
                 }
@@ -304,6 +325,17 @@
                     "ThemeDataColor": {
                       "ColorId": 0,
                       "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#262626'"
                     }
                   }
                 }
@@ -422,7 +454,7 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "a2ada7f235c3c9db27ec",
+  "parentGroupName": "ae6eb1f3d3382e6c69f7",
   "filterConfig": {
     "filters": [
       {
@@ -496,20 +528,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "3865f8b8a8c7363fd44b",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "[ Measures ]"
-              }
-            },
-            "Property": "Units Sold CM"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

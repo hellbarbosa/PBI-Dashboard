@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
-  "name": "5f59664bf16f486bab10",
+  "name": "5d52cdd7ba033651eca7",
   "position": {
     "x": 2.5,
     "y": 2.5,
     "z": 18000,
     "height": 182.5,
     "width": 320,
-    "tabOrder": 17000
+    "tabOrder": 8001
   },
   "visual": {
     "visualType": "barChart",
@@ -181,9 +181,30 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#4D4D4D'"
+                      "Value": "'#666666'"
                     }
                   }
+                }
+              }
+            },
+            "enableDetailDataLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "optimizeLabelDisplay": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "enableTitleDataLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -222,8 +243,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#D7F1FF'"
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.2
                     }
                   }
                 }
@@ -282,8 +304,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#D7F1FF'"
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.2
                     }
                   }
                 }
@@ -342,8 +365,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#D7F1FF'"
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.2
                     }
                   }
                 }
@@ -403,7 +427,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#28AAFF'"
+                      "Value": "'#135095'"
                     }
                   }
                 }
@@ -480,6 +504,17 @@
                   "Value": "45L"
                 }
               }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#B3B3B3'"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -491,6 +526,17 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#B3B3B3'"
+                    }
+                  }
                 }
               }
             }
@@ -562,7 +608,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#4D4D4D'"
+                      "Value": "'#F2F2F2'"
                     }
                   }
                 }
@@ -580,6 +626,17 @@
                   "Value": "true"
                 }
               }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#262626'"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -587,57 +644,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "a2ada7f235c3c9db27ec",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "311d17d06c95003ef7f6",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "FACTSales"
-              }
-            },
-            "Property": "Discount Band"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "23d32a3aa78a9869e997",
-        "field": {
-          "Arithmetic": {
-            "Left": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "[ Measures ]"
-                  }
-                },
-                "Property": "Units Sold"
-              }
-            },
-            "Right": {
-              "ScopedEval": {
-                "Expression": {
-                  "Measure": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "[ Measures ]"
-                      }
-                    },
-                    "Property": "Units Sold"
-                  }
-                },
-                "Scope": []
-              }
-            },
-            "Operator": 3
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "parentGroupName": "ae6eb1f3d3382e6c69f7"
 }

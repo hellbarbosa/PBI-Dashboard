@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
   "name": "72371578f52844d69220",
   "position": {
-    "x": 772.5,
-    "y": 560,
+    "x": 0,
+    "y": 0,
     "z": 15000,
     "height": 317.5,
     "width": 326.25
@@ -11,5 +11,6 @@
   "visualGroup": {
     "displayName": "Top Products table",
     "groupMode": "ScaleMode"
-  }
+  },
+  "parentGroupName": "a2ada7f235c3c9db27ec"
 }

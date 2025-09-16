@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
-  "name": "ec4566a6bb07067e60c0",
+  "name": "ae6eb1f3d3382e6c69f7",
   "position": {
-    "x": 0,
-    "y": 0,
-    "z": 13000,
-    "height": 900,
-    "width": 170,
-    "tabOrder": 10000
+    "x": 772.5,
+    "y": 560,
+    "z": 4125,
+    "height": 317.5,
+    "width": 328.75,
+    "tabOrder": 24002
   },
   "visualGroup": {
-    "displayName": "Left panel",
+    "displayName": "Discount Band",
     "groupMode": "ScaleMode"
   }
 }
